@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    width: 100vw;
+}
+
+body {
+    @apply font-montserrat;
+    background-image: url(./assets/Images/dog-background-sm.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+@media (min-width: 500px) {
+        body {
+        background-image: url(./assets/Images/dog-background-sm.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}
+
+@screen sm {
+    body {
+        background-image: url(./assets/Images/dog-background-lg.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 52vw
+    }
+}
+
+@screen 2xl {
+    body {
+        background-image: url(./assets/Images/dog-background-lg.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 800px
+    }
+}
+
