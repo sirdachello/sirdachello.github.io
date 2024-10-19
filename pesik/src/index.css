@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    overflow-x: hidden;
+    touch-action: pan-y;
+  }
+
 html {
     width: 100vw;
+    scroll-behavior: smooth;
 }
 
 body {
     @apply font-montserrat;
+    height: min-content;
     background-image: url(./assets/Images/dog-background-sm.svg);
     background-repeat: no-repeat;
     background-position: top right;

@@ -1,18 +1,15 @@
-import blob from "../assets/Images/sectionTwo/Ellipse 8-1.svg";
-import femaleImage from "../assets/Images/sectionTwo/SectionTwoFemale.svg";
+import OfferButton from "./OfferButton";
+import nextButton from "../assets/Images/Reviews/SlideButtonNext.svg";
+
+import ImageComp from "./ImageComp";
 
 export default function AboutSection() {
   return (
-    <div id="about" className="mx-5 mt-16 items-center sm:flex sm:justify-around md:mt-24 2xl:mt-56 2xl:mx-28">
-      <div>
-        <img
-          src={femaleImage}
-          alt="Smiling female with a dog sitting in the park."
-        />
-      </div>
-      <div className="relative mx-auto max-w-[360px] sm:mx-0 sm:max-w-96 xl:mr-[8vw] 2xl:max-w-[500px]">
-        <h2 className="mb-4 text-center text-lg h1 sm-400:text-xl md:text-[25px] 2xl:text-[40px]">
-          Хто ми?
+    <div className="mx-5 items-center sm:flex sm:flex-row-reverse sm:justify-around lg:mt-12 2xl:mx-28 2xl:mt-52">
+      <ImageComp />
+      <div className="relative mx-auto mt-10 max-w-[360px] sm:mx-0 sm:max-w-[300px] xl:mr-[8vw] 2xl:max-w-[500px]">
+        <h2 className="mb-4 text-left text-lg h1 sm-400:text-xl md:text-[25px] 2xl:text-[40px] 2xl:leading-10">
+          Шукаєш місце, де доглянуть песика?
         </h2>
         <p className="text-left tracking-wide text-03 2xl:text-[25px]">
           {" "}
@@ -26,11 +23,17 @@ export default function AboutSection() {
           раптом халепа — рятуємо послугами вигулювачів, песиконяні та домашньої
           перетримки.
         </p>
+
+        <div className="flex justify-between">
+        <OfferButton />
+        <a href="#top" className="hover:cursor-pointer -rotate-90 size-12 sm:hidden">
         <img
-          src={blob}
+          src={nextButton}
           alt=""
-          className="2xl: absolute bottom-[-30px] right-0 z-[-1] size-12 size-20"
+          className=""
         />
+        </a>
+        </div>
       </div>
     </div>
   );

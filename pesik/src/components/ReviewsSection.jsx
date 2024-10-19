@@ -23,6 +23,7 @@ export default function ReviewsSection() {
   const nextSlide = () => {
     setIndex((curr) => (curr + 1) % mobileReviews.length);
   };
+  
 
   const handlers = useSwipeable({
     onSwipedLeft: () => {
@@ -60,9 +61,10 @@ export default function ReviewsSection() {
         </button>
       </div>
       <div
+        id="reviews"
         {...handlers}
         style={{ backgroundImage: `url(${BG})` }}
-        className="relative mx-auto mt-4 hidden h-[550px] w-[1000px] items-center justify-center bg-contain bg-center bg-no-repeat lg:flex"
+        className="2xl:mt-36 relative mx-auto mt-4 hidden h-[550px] w-[1000px] items-center justify-center bg-contain bg-center bg-no-repeat lg:flex"
       >
         <button
           onClick={() => prevSlide()}

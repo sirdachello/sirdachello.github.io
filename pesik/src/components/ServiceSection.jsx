@@ -61,7 +61,7 @@ const card3Content = {
 
 export default function ServiceSection() {
   return (
-    <div className="mx-auto mt-6 w-[90vw]">
+    <div id="services" className="mx-auto mt-6 w-[90vw] 2xl:mt-36">
       <h2 className="text-center mb-16 text-lg h1 sm-400:text-xl md:text-[25px] 2xl:text-[40px] 2xl:mb-28">
         Що ми робимо?
       </h2>

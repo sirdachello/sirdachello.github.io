@@ -50,13 +50,15 @@ const benefitItem6 = {
 };
 
 export default function BenefitsSection() {
-
   return (
-    <div className="w-[312px] sm:w-[500px] descMobile:w-max mx-auto mt-[90px]">
+    <div
+      id="values"
+      className="mx-auto mt-[90px] w-[312px] sm:w-[500px] descMobile:w-max 2xl:mt-44"
+    >
       <h2 className="mb-[28px] text-center text-lg h1 sm-400:text-xl sm:text-[25px] 2xl:mb-24 2xl:text-[40px]">
         Чому ми?
       </h2>
-     <ul className="grid grid-cols-2 sm:grid-cols-3 sm:gap-5 descMobile:gap-[86px] descMobile:grid-cols-[repeat(3,_280px)]">
+      <ul className="grid grid-cols-2 sm:grid-cols-3 sm:gap-5 descMobile:grid-cols-[repeat(3,_280px)] descMobile:gap-[86px]">
         <BenefitItem content={benefitItem1} />
         <BenefitItem content={benefitItem2} />
         <BenefitItem content={benefitItem3} />
@@ -67,9 +69,3 @@ export default function BenefitsSection() {
     </div>
   );
 }
-
-
-
-
-
-
